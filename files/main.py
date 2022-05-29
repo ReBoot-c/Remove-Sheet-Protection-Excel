@@ -3,6 +3,7 @@ import argparse
 from sheetprotect import *
 from constans import *
 
+__version__ = '1.9.1'
 
 print("""
 #####  #####  #####   ####   ####  ######
@@ -11,7 +12,7 @@ print("""
 ##  ## ##     ##  ## ##  ## ##  ##   ##
 ##  ## #####  #####   ####   ####    ##\n""")
 
-print("[#] Remove Sheet Protection v. 1.9\n")
+print("[#] Remove Sheet Protection v. {}\n".format(__version__))
 parser = argparse.ArgumentParser()
 parser.add_argument("--file","-f",type=str, help="file to edit")
 parser.add_argument("--info","-i", action="store_true",
